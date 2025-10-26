@@ -1,0 +1,11 @@
+@use './../../styles/globals/variables' as *;
+
+.button {
+  width: 100%;
+  padding: 19px 0;
+  font-size: 18px;
+  font-family: $BRSonoma-bold;
+  color: $white;
+  background-color: $gray-dark;
+  border-radius: 40px;
+}

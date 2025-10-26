@@ -1,0 +1,20 @@
+@use './../../styles/globals/variables' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 24px;
+  background-color: $gray-dark;
+
+  &__divider {
+    border-bottom: 1px solid $light-2;
+    width: 100%;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 12px;
+  }
+}

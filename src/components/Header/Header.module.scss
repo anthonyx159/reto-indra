@@ -1,0 +1,28 @@
+@use './../../styles/globals/variables' as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+
+  &__contact {
+    display: flex;
+  }
+
+  &__text {
+    display: none;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: $BRSonoma-bold;
+    font-size: 18px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}

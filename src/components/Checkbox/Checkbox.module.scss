@@ -1,0 +1,40 @@
+.checkbox {
+  input {
+    display: none;
+    appearance: none;
+  }
+
+  label {
+    display: block;
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background-color: #0A051E;
+    border-radius: 6px;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 39%;
+    width: 5px;
+    height: 13px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg) translateY(-50%);
+  }
+}

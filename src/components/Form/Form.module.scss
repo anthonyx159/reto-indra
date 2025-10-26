@@ -1,0 +1,32 @@
+@use './../../styles/globals/variables' as *;
+
+.form {
+  margin-bottom: 96px;
+
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $BRSonoma-semibold;
+    margin-bottom: 24px;
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__box2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    margin-bottom: 36px;
+    gap: 16px;
+  }
+
+  &__terms {
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: $BRSonoma-semibold;
+    letter-spacing: .5px;
+  }
+}

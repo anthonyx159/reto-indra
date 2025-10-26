@@ -1,0 +1,40 @@
+@use './../../styles/globals/variables' as *;
+
+.home {
+
+}
+
+.principal {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+
+  &__text1 {
+    display: inline-block;
+    padding: 3px 8px 2px;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $BRSonoma-bold;
+    background: linear-gradient(90deg, #00f4e2, #00ff7f);
+    border-radius: 4px;
+    letter-spacing: .4px;
+  }
+
+  &__text2 {
+    margin-top: 8px;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: $BRSonoma-bold;
+  }
+
+  &__img {
+    width: 136px;
+  }
+}
+
+.divisor {
+  margin-bottom: 24px;
+  border-bottom: 1px solid $light-1;
+}
