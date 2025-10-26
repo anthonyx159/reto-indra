@@ -1,7 +1,30 @@
 @use './../../styles/globals/variables' as *;
+@use './../../styles/globals/mixins' as *;
 
 .home {
+  @include breakpoint-up(md) {
+    display: flex;
+    gap: 128px;
+  }
+}
 
+.left {
+  display: none;
+  width: 480px;
+
+  @include breakpoint-up(md) {
+    display: block;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.right {
+  @include breakpoint-up(md) {
+    width: 350px;
+  }
 }
 
 .principal {
@@ -10,6 +33,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+
+  @include breakpoint-up(md) {
+    margin-bottom: 10px;
+  }
 
   &__text1 {
     display: inline-block;
@@ -31,10 +58,18 @@
 
   &__img {
     width: 136px;
+
+    @include breakpoint-up(md) {
+      display: none;
+    }
   }
 }
 
 .divisor {
   margin-bottom: 24px;
   border-bottom: 1px solid $light-1;
+
+  @include breakpoint-up(md) {
+    display: none;
+  }
 }

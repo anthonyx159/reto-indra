@@ -28,15 +28,15 @@
       @content;
     }
   } @else if $media == sm {
-      @media only screen and (min-width: 769px) {
+      @media only screen and (min-width: 768px) {
         @content;
       }
   } @else if $media == md {
-      @media only screen and (min-width: 1025px) {
+      @media only screen and (min-width: 1024px) {
         @content;
       }
   } @else if $media == lg {
-      @media only screen and (min-width: 1201px) {
+      @media only screen and (min-width: 1200px) {
         @content;
       }
   } @else if $media == xl {

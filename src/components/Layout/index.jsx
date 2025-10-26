@@ -6,10 +6,12 @@ import styles from './Layout.module.scss';
 function Layout() {
   return (
     <div className={styles.layout}>
-      <Header />
-      <main className={styles.main}>
-        <Outlet /> {/* Aquí se renderizan las rutas hijas */}
-      </main>
+      <div className={styles.bg}>
+        <Header />
+        <main className={styles.main}>
+          <Outlet /> {/* Aquí se renderizan las rutas hijas */}
+        </main>
+      </div>
       <Footer />
     </div>
   )

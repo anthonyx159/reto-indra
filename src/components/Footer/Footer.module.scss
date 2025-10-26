@@ -1,16 +1,36 @@
 @use './../../styles/globals/variables' as *;
+@use './../../styles/globals/mixins' as *;
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 32px 24px;
   background-color: $gray-dark;
+
+  @include breakpoint-up(md) {
+    height: 106px;
+  }
+
+  &__container {
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    @include breakpoint-up(md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
   &__divider {
     border-bottom: 1px solid $light-2;
     width: 100%;
+
+    @include breakpoint-up(md) {
+      display: none;
+    }
   }
 
   &__text {

@@ -1,6 +1,30 @@
+@use './../../styles/globals/mixins' as *;
+
 .layout {
+  @include breakpoint-up(md) {
+    min-height: 100vh;
+  }
+}
+
+.bg {
+  background-image: url("../../assets/bg-mobile.png");
+  background-position: center;
+  background-size: cover;
+
+  @include breakpoint-up(md) {
+    background-image: url("../../assets/bg-desktop.png");
+  }
 }
 
 .main {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
   padding: 12px 24px;
+
+  @include breakpoint-up(md) {
+    min-height: calc(100vh - 60px - 106px);
+    display: flex;
+    align-items: center;
+  }
 }
