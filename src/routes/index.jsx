@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createHashRouter } from 'react-router-dom';
 
 import Layout from '../components/Layout';
 
@@ -7,16 +7,18 @@ import Register from '../pages/Register';
 // import ErrorPage from '../pages/ErrorPage';
 // import NotFound from '../pages/NotFound';
 
-export const router = createBrowserRouter([
-{
-  path: '/',
-  element: <Layout />,
-  // errorElement: <ErrorPage />,
-  children: [
-    { index: true, element: <Home /> },
-    { path: 'register', element: <Register /> },
-    // Rutas adicionales...
-  ]
-},
-// { path: '*', element: <NotFound /> }
-]);
+export const router = createHashRouter(
+  [
+    {
+      path: '/',
+      element: <Layout />,
+      // errorElement: <ErrorPage />,
+      children: [
+        { index: true, element: <Home /> },
+        { path: 'register', element: <Register /> },
+        // Rutas adicionales...
+      ]
+    },
+    // { path: '*', element: <NotFound /> }
+  ],
+);
