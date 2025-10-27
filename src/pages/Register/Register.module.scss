@@ -82,8 +82,22 @@
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1184px;
   width: 100%;
   margin: 0 auto;
   padding: 12px 24px;
+  gap: 16px;
+
+  @include breakpoint-up(md) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.container.hidden {
+  display: none;
 }

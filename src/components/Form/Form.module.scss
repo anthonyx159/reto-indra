@@ -29,4 +29,10 @@
     font-family: $BRSonoma-semibold;
     letter-spacing: .5px;
   }
+
+  &__error {
+    color: $pink;
+    font-size: 12px;
+    margin-top: 4px;
+  }
 }

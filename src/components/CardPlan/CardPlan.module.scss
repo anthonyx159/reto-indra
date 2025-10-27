@@ -1,20 +1,30 @@
 @use './../../styles/globals/variables' as *;
 @use './../../styles/globals/mixins' as *;
 
+$shadow: 20px 20px 40px rgba(91, 91, 247, 0.14);
+
 .cardPlan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: $white;
   padding: 40px 32px;
   border-radius: 28px;
+  height: 704px;
+  box-shadow: $shadow;
 
   @include breakpoint-up(md) {
     width: 288px;
+    padding: 68px 32px 40px;
   }
 
   &__headerBox {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
+    line-height: 30px;
     font-weight: bold;
+    gap: 16px;
 
     div {
       margin-top: 2px;
@@ -22,10 +32,21 @@
   }
 
   &__bodyPlan {
+    line-height: 22px;
+
     span {
-      text-transform: uppercase;
+      display: block;
       color: $gray-light4;
+    }
+
+    span:nth-child(1) {
+      text-transform: uppercase;
       font-size: 12px;
+    }
+
+    span:nth-child(2) {
+      text-decoration: line-through;
+      font-size: 14px;
     }
 
     div {
@@ -74,5 +95,6 @@
     background-color: $pink;
     color: $white;
     border-radius: 32px;
+    cursor: pointer;
   }
 }

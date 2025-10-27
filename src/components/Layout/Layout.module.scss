@@ -16,7 +16,12 @@
   }
 }
 
+.bg2 {
+  background: #FAFBFF;
+}
+
 .main {
+  min-height: calc(100vh - 56px - 106px);
   @include breakpoint-up(md) {
     min-height: calc(100vh - 60px - 106px);
     display: flex;

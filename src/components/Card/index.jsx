@@ -12,7 +12,6 @@ function Card({
 }) {
   const uid = useId();
   const inputId = id ?? `card-${uid}`;
-  // const gradId = `g-${uid}`; // evita colisiones de <defs> entre varias cards
 
   return (
     <div className={styles.optionCard}>
@@ -21,7 +20,6 @@ function Card({
         type="radio"
         name={name}
         id={inputId}
-        // checked={checked}
         onChange={onChange}
       />
 

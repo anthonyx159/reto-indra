@@ -15,7 +15,7 @@ function Home() {
           <div className={styles.principal}>
             <div className={styles.principal__box}>
               <div className={styles.principal__text1}>Seguro Salud Flexible</div>
-              <div className={styles.principal__text2}>Creado para ti y tu familia</div>
+              <h1 className={styles.principal__text2}>Creado para ti y tu familia</h1>
             </div>
             <img src={people} alt="Personas" className={styles.principal__img}/>
           </div>
