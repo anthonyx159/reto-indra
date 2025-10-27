@@ -72,11 +72,11 @@ Aplicación web desarrollada con React para la gestión de seguros.
   - **Ejecutar `npm run previe`**: Ejecutar este codigo para ver un preview en producción
 
 ## División de tareas
-  - **Se dividió las taras en x partes**: 
-    - 1. Estructurado del proyecto
-    - 2. Configuración del proyecto 
-    - 3. Maquetación de la vista home y register mediante la componetización de interfaces
-    - 4. Integración con los diferentes servicios
-    - 5. Implementación de Librerías
-    - 6. Deploying del proyecto en Github Pages
+  - **Se dividió las taras en 6 partes**: 
+    - Estructurado del proyecto
+    - Configuración del proyecto 
+    - Maquetación de la vista home y register mediante la componetización de interfaces
+    - Integración con los diferentes servicios
+    - Implementación de Librerías
+    - Deploying del proyecto en Github Pages
   
