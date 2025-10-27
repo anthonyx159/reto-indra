@@ -1,0 +1,78 @@
+@use './../../styles/globals/variables' as *;
+@use './../../styles/globals/mixins' as *;
+
+.cardPlan {
+  background-color: $white;
+  padding: 40px 32px;
+  border-radius: 28px;
+
+  @include breakpoint-up(md) {
+    width: 288px;
+  }
+
+  &__headerBox {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+
+    div {
+      margin-top: 2px;
+    }
+  }
+
+  &__bodyPlan {
+    span {
+      text-transform: uppercase;
+      color: $gray-light4;
+      font-size: 12px;
+    }
+
+    div {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+  }
+
+  &__divider {
+    margin: 24px 0;
+    border-bottom: 1px solid $gray-light2;
+  }
+
+  &__features {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  &__feature {
+    display: flex;
+    gap: 8px;
+  }
+  
+  &__featureLeft {
+    display: inline-block; 
+    flex-shrink: 0;
+    margin-top: 8px;
+    width: 7px;
+    height: 7px;
+    background: #000;
+    border-radius: 50%; 
+  }
+
+  &__featureRight {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    background-color: $pink;
+    color: $white;
+    border-radius: 32px;
+  }
+}

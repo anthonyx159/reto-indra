@@ -2,6 +2,11 @@
 @use './../../styles/globals/mixins' as *;
 
 .home {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 24px;
+
   @include breakpoint-up(md) {
     display: flex;
     gap: 128px;

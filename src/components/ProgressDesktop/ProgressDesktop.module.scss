@@ -1,0 +1,49 @@
+@use '../../styles/globals/variables' as *;
+@use '../../styles/globals/mixins' as *;
+
+.ProgressDesktop {
+  display: none;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: $gray-light5;
+
+  @include breakpoint-up(md) {
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    div:nth-child(1) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      font-size: 12px;
+      line-height: 12px;
+      background-color: $purple;
+      color: $white;
+      border-radius: 50%;
+    }
+  }
+
+  &__dots {
+    color: $purple;
+    font-weight: bold;
+  }
+}
+
+.inactive {
+  color: $gray-light4;
+
+  div:nth-child(1) {
+    color: $gray-light4;
+    background-color: transparent;
+    border: 1px solid;
+  }
+}

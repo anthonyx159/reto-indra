@@ -1,0 +1,89 @@
+@use './../../styles/globals/variables' as *;
+@use './../../styles/globals/mixins' as *;
+
+.registerPage {
+  width: 100%;
+  padding: 12px 24px;
+
+  @include breakpoint-up(md) {
+    padding: unset;
+  }
+}
+
+.back {
+  display: none;
+  width: 850px;
+  margin: 40px auto 56px;
+  justify-content: flex-start;
+  align-items: center;
+
+  @include breakpoint-up(md) {
+    display: flex;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+}
+
+.desc {
+  @include breakpoint-up(md) {
+    width: 500px;
+    margin: 0 auto 32px;
+  }
+
+  &__title {
+    font-family: $BRSonoma-bold;
+    font-size: 28px;
+    line-height: 36px;
+
+    @include breakpoint-up(md) {
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .1px;
+
+    @include breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+}
+
+.divisor {
+  margin: 16px 0 31px;
+  border-bottom: 1px solid $gray-light2;
+
+  @include breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.cards {
+  display: flex;
+  margin-bottom: 38px;
+  flex-direction: column;
+  grid-gap: 24px;
+
+  @include breakpoint-up(md) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 1184px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 24px;
+}
